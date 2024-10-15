@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+
+    <title>Events</title>
+    
+</head>
+<body>
+   <div class="container1">
+    <header id="heading">
+        <nav>
+                <div class="nav-links">
+                    <a href="#"><img src="./logo.jpeg" class="img 1"></a>
+            <ul class="lists">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="#">MERCH</a></li>
+                <li style="right: 35px;"><a href="#">TREDEX</a></li>
+            </ul>
+            <!-- <div class="toggle">
+                <i class="fa-solid fa-bars" id="menu-btn_open"></i>
+                <i class="fa-solid fa-times" id="menu-btn_close"></i></i>
+            </div> -->
+            
+                </div>
+            
+        </nav>
+       </header> 
+       <div class="container2">
+        <div class="box">
+            <img src="./flyer.webp" alt="" class="img2"></div>
+        <div class="box2">
+            <h1>VICTONY HOMECOMING CONCERT</h1>
+            <P>"Outlawville Presents: Victony Homecoming FUTO"</P>
+            <P class="p2">Federal University of Technology, Owerri, July 15, 2023 4:00 PM</P>
+            <button>RSVP, Limited Slots</button>
+        </div>
+       </div>
+   </div>
+   <div id="sidebar" class="fixed inset-0 z-10 bg-black  text-white transform translate-x-full transition-transform duration-500 flex items-center justify-center">
+        <nav class="text-center space-y-8 text-3xl">
+            <a href="#about" class="block ">About</a>
+            <a href="#projects" class="block hover:underline">Projects</a>
+            <a href="#contact" class="block hover:underline">Contact</a>
+        </nav>
+    </div>
+<script>
+  // Hamburger menu elements
+  const hamburger = document.getElementById('hamburger');
+  const sidebar = document.getElementById('sidebar');
+  const bar1 = document.getElementById('bar1');
+  const bar2 = document.getElementById('bar2');
+
+  // Toggle sidebar and hamburger animation
+  hamburger.addEventListener('click', () => {
+      sidebar.classList.toggle('translate-x-full');
+      bar2.classList.toggle('rotate-90');
+  });
+
+  // Vertical lines transition
+  window.addEventListener('load', () => {
+      document.querySelector('.line-1').classList.add('active');
+      setTimeout(() => {
+          document.querySelector('.line-2').classList.add('active');
+      }, 500);
+  });
+</script>
+</body>
+</html>
